@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Example scrolling</title>
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/static/js/jquery-2.2.3.min.js"></script>
+    <!-- Included Bootstrap CSS Files -->
+    {#    <link rel="stylesheet" href="/static/js/bootstrap/css/bootstrap.min.css" />#}
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery.fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    <script type="text/javascript" src="/static/js/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="/static/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="/static/js/imagesloaded.pkgd.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+
+</head>
+<body >
+
+
+
+<div class="nav">
+    <ul id="menu" class="nav nav-pills" style="position:fixed; z-index:70" >
+        <li data-menuanchor="firstPage" class="active" ><a href="#firstPage">Home</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Tours</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">About Us</a></li>
+        <li data-menuanchor="4thPage"><a href="#4thPage">Contact Us</a></li>
+    </ul>
+</div>
+<div id="fullpage" >
+
+    <div id='section' data-anchor="firstPage" class="section section-one">
+        <a href="#secondPage" class="scroll-btn"><span class="glyphicon glyphicon-chevron-down" style="font-size:2.8vw;"></span></a>
+        {#        <a href="#secondPage"><img class="scroll-btn" src="/static/img/scroll-btn.png"/></a>#}
+    </div>
+
+    <div id='section' data-anchor="secondPage" class="section">
+        {#        <div class="grid" >#}
+        {#            <div    ></div>#}
+        {#            <div class="grid-item"><img src="/static/img/gal1.jpg"/></div>#}
+        {#            <div class="grid-item grid-item--width2"><img src="/static/img/gal2.JPG"/></div>#}
+        {#            <div class="grid-item"><img src="/static/img/gal3.JPG"/></div>#}
+        {#            <div class="grid-item grid-item--height2"><img src="/static/img/gal4.jpg"/></div>#}
+        {#            <div class="grid-item"><img src="/static/img/gal5.jpg"/></div>#}
+        {#        </div>#}
+        {#    </div>#}
+
+    <div class="container">
+        <div class="grid">
+            <div class="grid-sizer"></div>
+
+            <div class="grid-item">
+                <img src="/static/img/gal1.jpg"/>
+            </div>
+
+
+                        <div class="grid-item">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+                        </div>
+
+            <div class="grid-item">
+                <img src="/static/img/gal8.jpeg"/>
+            </div>
+<div class="grid-item">
+                <p class="tour-blurb blurb-two">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+            </div>
+
+            <div class="grid-item">
+                <img src="/static/img/gal5.jpg"/>
+            </div>
+
+            <div class="grid-item">
+                <img src="/static/img/gal9.jpg"/>
+            </div>
+
+
+<div class="grid-item">
+                <p class="tour-blurb blurb-one">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
+
+
+
+            <div class="grid-item">
+                <img src="/static/img/gal2.JPG"/>
+            </div>
+
+            <div class="grid-item">
+                <img src="/static/img/gal4.jpg"/>
+            </div>
+            <div class="grid-item">
+                <p class="tour-blurb blurb-four">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+            </div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+            </div>
+
+            <div class="grid-item">
+                <img src="/static/img/gal3.JPG"/>
+            </div>
+
+            <div class="grid-item">
+                <img src="/static/img/gal6.jpg"/>
+            </div>
+
+            <div class="grid-item">
+                <p class="tour-blurb blurb-three">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+            </div>
+            <div class="grid-item">
+                <img src="/static/img/gal7.jpg"/>
+            </div>
+        </div>
+        </div>
+        <h1 class="register-interest">COMING SOON. <br/>
+            Borneo Ethical Adventures will commence voluntours into the heart of Borneo in 2016.
+            <br/>
+            Register your interest now!
+        </h1>
+        <span class="glyphicon glyphicon-chevron-down" style="font-size:2.3vw;     margin:auto; /* Required */
+    position:relative; /* Required */
+    bottom:0; /* Aligns at the bottom */
+    left:0;right:0; /* Aligns horizontal center */"></span>
+    </div>
+
+
+    <div id='section' data-anchor="3rdPage" class="section section-two">Some section</div>
+
+    <div id='section' data-anchor="4thPage" class="section container section-three" >
+        <div class="container">
+            <form class="well form-horizontal" action="MAILTO:contact@beadventures.com.au" method="post"  id="contact_form">
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <legend >Contact Us</legend>
+
+                    <!-- Text input-->
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">First Name</label>
+                        <div class="col-md-8 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" >Last Name</label>
+                        <div class="col-md-8 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">E-Mail</label>
+                        <div class="col-md-8 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    {#                    <!-- Text input-->#}
+                    {##}
+                    {#                    <div class="form-group">#}
+                    {#                        <label class="col-md-4 control-label">Phone #</label>#}
+                    {#                        <div class="col-md-4 inputGroupContainer">#}
+                    {#                            <div class="input-group">#}
+                    {#                                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>#}
+                    {#                                <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">#}
+                    {#                            </div>#}
+                    {#                        </div>#}
+                    {#                    </div>#}
+
+
+                    <!-- Text area -->
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Message</label>
+                        <div class="col-md-8 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                <textarea class="form-control form-message" name="comment" placeholder="Body"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Success message -->
+                    <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label"></label>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-success" >Send <span class="glyphicon glyphicon-send"></span></button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<script>
+    $(document).ready(function() {
+
+        // init Masonry after all images have loaded
+    var $grid = $('.grid').imagesLoaded( function() {
+        $grid.masonry({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            columnWidth: '.grid-sizer'
+        });
+
+
+
+    });
+        $('#fullpage').fullpage({
+            anchors:['firstPage', 'secondPage', '3rdPage', '4thPage'],
+            menu: '#menu',
+            sectionsColor: ['', ' #80ccff', '#7E8F7C'],
+            responsiveWidth: 1100
+
+        });
+    });
+
+    // external js: masonry.pkgd.js, imagesloaded.pkgd.js
+
+
+
+</script>
+<script type="text/javascript" src="/static/js/script.js"></script>
+</body>
+</html>
