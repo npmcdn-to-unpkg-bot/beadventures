@@ -1,0 +1,4 @@
+Django==1.9.6
+django-crispy-forms==1.6.0
+django-floppyforms==1.6.2
+wheel==0.24.0
