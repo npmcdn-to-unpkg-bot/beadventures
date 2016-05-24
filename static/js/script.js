@@ -110,7 +110,6 @@
 
             // Get the form instance
             var $form = $(e.target);
-
             // Get the BootstrapValidator instance
             var bv = $form.data('bootstrapValidator');
 

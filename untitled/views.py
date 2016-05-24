@@ -4,7 +4,7 @@ from django.core.mail import EmailMessage
 from django.http import HttpResponse
 
 def index(request):
-    return render(request,'index.html')
+    return render(request,'test.html')
 
 def index_new(request):
     return render(request,'test.html')
