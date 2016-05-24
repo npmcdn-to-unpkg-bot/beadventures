@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ca0faefc-6ccd-4c58-a31d-174571c5b7a8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/untitled/settings.py" afterPath="$PROJECT_DIR$/untitled/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/test.html" afterPath="$PROJECT_DIR$/templates/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/untitled/views.py" afterPath="$PROJECT_DIR$/untitled/views.py" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,8 +55,8 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.625">
-              <caret line="320" column="36" selection-start-line="320" selection-start-column="36" selection-end-line="320" selection-end-column="36" />
+            <state vertical-scroll-proportion="-14.375">
+              <caret line="318" column="75" selection-start-line="318" selection-start-column="75" selection-end-line="318" selection-end-column="75" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -93,6 +94,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/untitled/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5637255">
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/untitled/urls.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,33 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/untitled/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="email.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/email.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/untitled/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9019608">
-              <caret line="135" column="32" selection-start-line="135" selection-start-column="32" selection-end-line="135" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,9 +155,9 @@
         <option value="$PROJECT_DIR$/static/php/email.php" />
         <option value="$PROJECT_DIR$/templates/email.php" />
         <option value="$PROJECT_DIR$/untitled/urls.py" />
+        <option value="$PROJECT_DIR$/untitled/settings.py" />
         <option value="$PROJECT_DIR$/templates/test.html" />
         <option value="$PROJECT_DIR$/untitled/views.py" />
-        <option value="$PROJECT_DIR$/untitled/settings.py" />
       </list>
     </option>
   </component>
@@ -607,12 +598,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -955,24 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/email.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.625">
-          <caret line="320" column="36" selection-start-line="320" selection-start-column="36" selection-end-line="320" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/untitled/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -983,21 +956,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/untitled/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/email.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.46568626">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/untitled/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9019608">
-          <caret line="135" column="32" selection-start-line="135" selection-start-column="32" selection-end-line="135" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.375">
+          <caret line="318" column="75" selection-start-line="318" selection-start-column="75" selection-end-line="318" selection-end-column="75" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5637255">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
