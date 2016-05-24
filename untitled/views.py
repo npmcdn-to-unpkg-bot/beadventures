@@ -7,9 +7,19 @@ def index(request):
 def index_new(request):
     return render(request,'test.html')
 
-@csrf_exempt
+from django.core.mail import EmailMessage
+from django.http import HttpResponse
+from django.template.loader import render_to_string
+
 def email(request):
-    return render(request, 'email.php/')
+    subject = "I am a text email"
+    to = ['andrew-edwards@live.com']
+    from_email = 'test@example.com'
+
+    message = 'blah'
+    EmailMessage(subject, message, to=to, from_email=from_email).send()
+
+    return HttpResponse('email_one')
 
 from django.conf import settings
 from django.core.mail import send_mail
