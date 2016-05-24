@@ -2,15 +2,21 @@
 <html>
 <head>
     <meta charset="utf-8">
+
     <title>Borneo Ethical Adventures</title>
+
     <link rel="stylesheet" type="text/css" href="/static/css/jquery.fullpage.css" />
-    <script src="/static/js/jquery-2.2.3.min.js"></script>
-    <script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
-    <script type="text/javascript" src="/static/js/imagesloaded.pkgd.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
-    <script type="text/javascript" src="/static/js/script.js"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/css/style.css" rel="stylesheet">
+
+    <script src="/static/js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="/static/js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="/static/js/script.js"></script>
+
+    <script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
+
+
 
     <style>
 
@@ -105,12 +111,20 @@
                             Depart the hotel at 8am.
                             Breakfast on infamous Sarawak laksa, popiah or rot I at a popular local cafe ( Choon Hui or Choon Chou )
                         </p>
-
-                        <p>Your journey to Bako National Park is made all the more pleasurable with a 20min boat ride through a stilted water village bustling with local fisherman.</p>
-                        <p>As the inlet opens to the calm waters of the South China Sea we pass traditional fish traps, mangroves and islands.</p>
-                        <p>Look out for the bottle nose dolphin, crocodiles, water monitors and coastal sea eagles.
-                        <p>Bako National Park provides the perfect introduction to your wildlife encounter with regular sightings of Proboscis monkey, long tailed macaque, silverleaf monkeys and wild boar.</p>
-                        <p>Explore a trail or two and enjoy a picnic lunch before returning to town.</p>
+                        <p>
+                            Your journey to Bako National Park is made all the more pleasurable with a 20min boat ride through a stilted water village bustling with local fisherman.
+                        </p>
+                        <p>
+                            As the inlet opens to the calm waters of the South China Sea we pass traditional fish traps, mangroves and islands.
+                        </p>
+                        <p>
+                            Look out for the bottle nose dolphin, crocodiles, water monitors and coastal sea eagles.
+                        <p>
+                        Bako National Park provides the perfect introduction to your wildlife encounter with regular sightings of Proboscis monkey, long tailed macaque, silverleaf monkeys and wild boar.
+                        </p>
+                        <p>
+                            Explore a trail or two and enjoy a picnic lunch before returning to town.
+                        </p>
                     </div>
                     <img class="grid-item grid-item--width2 grid-item--height2" src="/static/img/tour1/gal8.jpeg"/>
                     <img class="grid-item grid-item--height2" src="/static/img/tour1/gal5.jpg"/>
@@ -314,11 +328,11 @@
         </div>
 
     </div>
+
     <div class="section"  data-anchor="contactSection" id="contact">
         <div class="container">
             <form class="well form-horizontal" method="post" action="email/" id="contact_form">
                 <fieldset>
-{#                {% csrf_token %}#}
                     <!-- Form Name -->
                     <legend class="contact-form-heading">Contact Us</legend>
                     <p>If you would like to know more about us, our tours, or would like to enquire about a booking please get in touch with the form below!</p>
@@ -357,20 +371,6 @@
                         </div>
                     </div>
 
-
-                    {#                    <!-- Text input-->#}
-                    {##}
-                    {#                    <div class="form-group">#}
-                    {#                        <label class="col-md-4 control-label">Phone #</label>#}
-                    {#                        <div class="col-md-4 inputGroupContainer">#}
-                    {#                            <div class="input-group">#}
-                    {#                                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>#}
-                    {#                                <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">#}
-                    {#                            </div>#}
-                    {#                        </div>#}
-                    {#                    </div>#}
-
-
                     <!-- Text area -->
 
                     <div class="form-group">
@@ -407,8 +407,6 @@
 <script type="text/javascript" src="/static/js/jquery.slimscroll.min.js"></script>
 
 <script>
-
-
     $(document).ready(function () {
 
         WebFontConfig = {
@@ -435,19 +433,6 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(wf, s);
         })();
-
-{#        $('#contact_form').submit(function(e){#}
-{#            e.preventDefault();#}
-{#            $.ajax({#}
-{#                url:'/static/php/email.php',#}
-{#                type:'get',#}
-{#                data:$('#contact_form').serialize(),#}
-{#                success:function(){#}
-{#                    //do nothing.#}
-{#                }#}
-{#            });#}
-{#        });#}
-
     });
 
     // external js: masonry.pkgd.js
@@ -465,6 +450,7 @@
         responsiveWidth: 1100,
         scrollOverflow: true,
     });
+
 </script>
 </body>
 </html>
