@@ -440,7 +440,7 @@
             e.preventDefault();
             $.ajax({
                 url:'/static/php/email.php',
-                type:'post',
+                type:'get',
                 data:$('#contact_form').serialize(),
                 success:function(){
                     //do nothing.
