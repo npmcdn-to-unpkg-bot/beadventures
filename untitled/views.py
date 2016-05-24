@@ -1,4 +1,5 @@
 from django.shortcuts import render_to_response, render
+from django.views.decorators.csrf import csrf_exempt
 
 def index(request):
     return render(request,'index.html')
@@ -6,8 +7,9 @@ def index(request):
 def index_new(request):
     return render(request,'test.html')
 
+@csrf_exempt
 def email(request):
-    return render()
+    return render(request, 'email.php/')
 
 from django.conf import settings
 from django.core.mail import send_mail

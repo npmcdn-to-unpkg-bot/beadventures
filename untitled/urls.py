@@ -21,5 +21,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name='home'),
     url(r'^new/$', views.index_new, name='home-new'),
-    url(r'^email_form/$', views.ContactFormView.as_view(), name='email_form')
+    url(r'^new/email.php/$', views.email, name='email_form')
 ]
