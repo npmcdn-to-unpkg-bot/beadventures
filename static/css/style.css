@@ -1,11 +1,15 @@
 .scroll-btn {
-    width: 54px;
-    height: 54px;
-    margin:auto; /* Required */
-    position:absolute; /* Required */
+
+    font-size:2.3vw;
+    margin:auto;
+    position:relative; /* Required */
     bottom:0; /* Aligns at the bottom */
     left:0;right:0; /* Aligns horizontal center */
 }
+/*#scroll-btn-link{*/
+    /*text-decoration: none;*/
+    /*color:inherit;*/
+/*}*/
 #section {
     margin:auto;
     left:0;right:0;
@@ -19,78 +23,43 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/*.grid-sizer{width:0%}*/
-/*.grid-item {*/
-  /*float: left;*/
-  /*width: 80px;*/
-  /*height: 60px;*/
-  /*border: 2px solid hsla(0, 0%, 0%, 0.5);*/
-/*}*/
-
-/*.grid-item--width2 { width: 160px; }*/
-/*.grid-item--height2 { height: 140px; }*/
-
 #success_message{ display: none;}
 
 * { box-sizing: border-box; }
 
-/* force scrollbar */
-html { overflow-y: scroll; }
-
 body { font-family: sans-serif; }
 
-/* ---- grid ---- */
 
-.grid {
-  /*background: #DDD;*/
-    width:90%;
-    margin-left:auto !important;
-    margin-right:auto !important;
-}
 
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* ---- .grid-item ---- */
-
-.grid-sizer,
-.grid-item {
-  width: 20%;
-}
-
-.grid-item {
-  float: left;
-}
-
-.grid-item img, .grid-item p{
-  display: block;
-  width: 100%;
-}
-
-.tour-blurb{
-    padding:2px 2px 2px 2px !important;
+.tour-blurb {
+    /*font-family: 'Montserrat', sans-serif;*/
+    padding:14px 14px 14px 14px !important;
     margin:auto;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.8vw;
+
+    /*font-size: 0.8vw;*/
+    /*margin:0 0 0 0;*/
+    text-align: center;
+    width:200px;
 }
 
 .blurb-one{
-    background-color: rgba(255, 106, 236, 0.65);
+    background-color: rgba(136, 204, 0, 0.73);
+
 
 }
 .blurb-two{
-    background-color: rgba(136, 204, 0, 0.73);
+    background-color: rgba(255, 106, 236, 0.74);
 }
 .blurb-three{
-    background-color: rgba(14, 144, 210, 0.7);
+    background-color: rgba(14, 144, 210, 0.73);
 }
 
 .blurb-four{
     background-color: rgba(255, 153, 5, 0.74);
+}
+
+.blurb-five{
+    background-color: rgba(251, 255, 22, 0.74);
 }
 
 .register-interest{
@@ -100,20 +69,20 @@ body { font-family: sans-serif; }
 
 .section-one{
     background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg1.jpg);
-		padding: 30% 0 0 0;
+    padding: 30% 0 0 0;
 }
 
-	#section0{
+#section0{
 
-	}
-	.section-two{
-		background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg3.jpg);
-		padding: 6% 0 0 0;
-	}
-	.section-three{
-		background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg4.jpg);
-		padding: 6% 0 0 0;
-	}
+}
+.section-two{
+    background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg3.jpg);
+    padding: 6% 0 0 0;
+}
+.section-three{
+    background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg4.jpg);
+    padding: 6% 0 0 0;
+}
 
 .nav>ul>li>a:hover,
 .nav>ul>li>a:focus {
@@ -136,4 +105,102 @@ body { font-family: sans-serif; }
 
 .contact-form-heading{
     font-size:3em;
+}
+
+.heading{
+    font-family: 'Montserrat', sans-serif;
+    position:absolute;
+    margin:auto;
+    left:0;right:0;
+    top:5%;
+}
+
+.tours-heading{
+    font-family: 'Montserrat', sans-serif;
+    /*position:absolute;*/
+    margin-top:50px;
+    left:0;right:0;
+}
+
+.tour-heading-one{
+    right:25%;
+}
+
+.tour-heading-two{
+    color:#797979;
+}
+
+#about-us-container{
+    background-color: rgba(200, 200, 200, 0.89);
+    border-radius: 15px;
+    margin-top:50px;
+    padding:10px 60px 20px 60px;
+    color: rgb(50, 122, 164);
+}
+
+.tours-container{
+
+}
+
+/* Style for our header texts
+        * --------------------------------------- */
+h1{
+    font-size: 5em;
+    font-family: Montserrat;
+    margin:0;
+    padding:0;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+    text-align:center;
+}
+
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+.section{
+    background-size: cover;
+}
+
+.slide{
+    background-size: cover;
+}
+
+/* Defining each sectino background and styles
+* --------------------------------------- */
+#home{
+    background-image: url(/static/img/background-section0.jpg);
+    padding: 0 0 0 0;
+}
+#about{
+    background-image: url(/static/img/background-section2.jpeg);
+    padding: 0 0 0 0;
+}
+#contact{
+    background-image: url(/static/img/background-section3.jpeg);
+    padding: 0 0 0 0;
+}
+#contact h1{
+    color: #000;
+}
+
+
+/*Adding background for the slides
+* --------------------------------------- */
+#slide1{
+    background-image: url(/static/img/background-section1-slide1.jpg);
+    padding: 0 0 0 0;
+}
+#slide2{
+    background-image: url(/static/img/background-section1-slide2.jpg);
+    padding: 0 0 0 0;
+}
+
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+    color: #fff;
 }

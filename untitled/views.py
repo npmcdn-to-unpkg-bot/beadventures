@@ -4,7 +4,7 @@ def index(request):
     return render(request,'index.html')
 
 def index_new(request):
-    return render(request,'index_new.html')
+    return render(request,'test.html')
 
 def email(request):
     return render()

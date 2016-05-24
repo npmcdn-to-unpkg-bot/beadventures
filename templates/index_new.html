@@ -12,6 +12,7 @@
     <script src="/static/js/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
     <script type="text/javascript" src="/static/js/script.js"></script>
+    <script type="text/javascript" src="/static/js/salvattore.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/static/css/jquery.fullpage.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
     <script type="text/javascript" src="/static/js/masonry.pkgd.min.js"></script>
@@ -59,15 +60,15 @@
         /* Defining each sectino background and styles
         * --------------------------------------- */
         #section0{
-            background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg1.jpg);
+            background-image: url(/static/img/background-section0.jpg);
             padding: 30% 0 0 0;
         }
         #section2{
-            background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg3.jpg);
+            background-image: url(/static/img/background-section2.jpeg);
             padding: 6% 0 0 0;
         }
         #section3{
-            background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg4.jpg);
+            background-image: url(/static/img/background-section3.jpeg);
             padding: 6% 0 0 0;
         }
         #section3 h1{
@@ -78,11 +79,11 @@
         /*Adding background for the slides
        * --------------------------------------- */
         #slide1{
-            background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg2.jpg);
+            background-image: url(/static/img/background-section1-slide1.jpg);
             padding: 6% 0 0 0;
         }
         #slide2{
-            background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg5.jpg);
+            background-image: url(/static/img/background-section1-slide2.jpg);
             padding: 6% 0 0 0;
         }
 
@@ -101,10 +102,11 @@
 	<![endif]-->
 
     <script type="text/javascript" src="/static/js/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.slimscroll.min.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {
-            // init Masonry after all images have loaded
+{#            // init Masonry after all images have loaded#}
             var $grid = $('.grid').imagesLoaded( function() {
                 $grid.masonry({
                     itemSelector: '.grid-item',
@@ -113,15 +115,64 @@
                 });
             });
 
-                $('#fullpage').fullpage({
-                    'verticalCentered': false,
-                    navigation: true,
-                    menu: '#menu',
-                    anchors:['firstPage', 'secondPage', '3rdPage', '4thPage'],
-                    responsiveWidth: 1100
-                });
+            $('#fullpage').fullpage({
+                'verticalCentered': false,
+                navigation: true,
+                menu: '#menu',
+                anchors:['firstPage', 'secondPage', '3rdPage', '4thPage'],
+                responsiveWidth: 1100,
+                scrollOverflow: true
             });
+        });
     </script>
+
+
+    <style>
+        * { box-sizing: border-box; }
+
+        body { font-family: sans-serif; }
+
+        /* ---- grid ---- */
+
+        .grid {
+            background: #EEE;
+            max-width:95%;
+            max-height:90%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* clearfix */
+        .grid:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        /* ---- grid-item ---- */
+
+        .grid-sizer,
+        .grid-item {
+            width: 20%;
+        }
+
+        .grid-item, .grid-item img {
+        {#            height: 120px;#}
+            float: left;
+        {#            background: #D26;#}
+        {#            border: 2px solid #333;#}
+        {#            border-color: hsla(0, 0%, 0%, 0.5);#}
+        {#            border-radius: 5px;#}
+        }
+
+        .grid-item--width2, .grid-item--width2 img { width:  40%; }
+        .grid-item--width3 { width:  60%; }
+
+        {#        .grid-item--height2, .grid-item--height2 img { height: 200px; }#}
+        {#        .grid-item--height3 { height: 260px; }#}
+        {#        .grid-item--height4 { height: 360px; }#}
+
+    </style>
+
 
 </head>
 <body>
@@ -137,89 +188,250 @@
 
 <div id="fullpage">
     <div class="section " data-anchor="firstPage" id="section0">
-        <h1>Borneo Ethical Adventures</h1>
-        <h1>beadventures.com.au</h1>
+        <h1 class="heading">Borneo Ethical Adventures <br/>
+            beadventures.com.au</h1>
     </div>
     <div class="section " data-anchor="secondPage" id="section1">
         <div class="slide" id="slide1">
-            <h1>Tour 1:</h1>
-            <div class="container">
-                <div class="grid">
-                    <div class="grid-sizer"></div>
+{#            <h1 class="heading tour-heading-one">Tour 1:</h1>#}
+{#            <div class="container heading">#}
+{#                <div class="grid" data-columns>#}
+{#                    <div class="grid-sizer"></div>#}
+{##}
+{#                    <div class="grid-item grid-item-width2">#}
+{##}
+{#                        <p class="tour-blurb blurb-one">#}
+{#                            Day 1: <br/>#}
+{#                            Bako National Park <br/>#}
+{#                            Nature logo <br/>#}
+{#                            45 mins drive <br/>#}
+{#                            20 mins boat ride <br/>#}
+{#                        </p>#}
+{##}
+{#                        <p class="tour-blurb blurb-one">#}
+{#                            Depart the hotel at 8am.#}
+{#                            Breakfast on infamous Sarawak laksa, popiah or rot I at a popular local cafe ( Choon Hui or Choon Chou )#}
+{#                        </p>#}
+{##}
+{#                        <p class="tour-blurb blurb-one">Your journey to Bako National Park is made all the more pleasurable with a 20min boat ride through a stilted water village bustling with local fisherman.</p>#}
+{#                        <p class="tour-blurb blurb-one">As the inlet opens to the calm waters of the South China Sea we pass traditional fish traps, mangroves and islands.</p>#}
+{#                        <p class="tour-blurb blurb-one">Look out for the bottle nose dolphin, crocodiles, water monitors and coastal sea eagles.#}
+{#                        <p class="tour-blurb blurb-one">Bako National Park provides the perfect introduction to your wildlife encounter with regular sightings of Proboscis monkey, long tailed macaque, silverleaf monkeys and wild boar.</p>#}
+{#                        <p class="tour-blurb blurb-one">Explore a trail or two and enjoy a picnic lunch before returning to town.#}
+{#                        </p>#}
+{#                    </div>#}
+{##}
+{#                    <div class="grid-item">#}
+{#                        <img src="/static/img/tour1/gal1.jpg"/>#}
+{#                    </div>#}
+{#                     <div class="grid-item">#}
+{#                        <p class="tour-blurb blurb-two">#}
+{#                            Day 2:<br/>#}
+{#                            Behind the scenes at Matang rehabilitation sanctuary.#}
+{#                        </p>#}
+{#                        <p class="tour-blurb blurb-two">#}
+{#                            The dedicated staff and volunteers at Matang have saved and rehabitated thousands of endangered Bornean animals since their inception in....#}
+{#                        </p>#}
+{#                        <p class="tour-blurb blurb-two">#}
+{#                            You'll have the opportunity to get behind the scenes and learn what is required to keep the valuable volunteer project at Matang ticking along#}
+{#                            Looking stylishly Euro there#}
+{#                        </p>#}
+{#                    </div>#}
+{##}
+{#                    <div class="grid-item">#}
+{#                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />#}
+{#                    </div>#}
+{##}
+{#                    <div class="grid-item">#}
+{#                        <img src="/static/img/tour1/gal8.jpeg"/>#}
+{#                    </div>#}
+{##}
+{#                    <div class="grid-item">#}
+{#                        <p class="tour-blurb blurb-three">#}
+{#                            Day 3: <br/>#}
+{#                            Depart 8am for a full day of Borneo at its best.#}
+{#                            Kick start with the much anticipated visit to Semengoh Wildlife Sanctuary to witness orangutan in relatively nature setting. Back that up with a kayak journey along the...stopping at scenic locations for swimming, sightseeing and a traditional longhouse lunch.#}
+{#                        </p>#}
+{#                        <p class="tour-blurb blurb-three">#}
+{#                            On our last night in Kuching we learn we take a cooking class and share our meal with some Kuching locals doing great work for the people, animal and protected areas of Sarawak.#}
+{#                        </p>#}
+{##}
+{#                    </div>#}
+{#                    <div class="grid-item">#}
+{#                        <img src="/static/img/tour1/gal5.jpg"/>#}
+{#                    </div>#}
+{##}
+{#                    <div class="grid-item">#}
+{#                        <img src="/static/img/tour1/gal9.jpg"/>#}
+{#                    </div>#}
+{##}
+{#                    <div class="grid-item">#}
+{#                        <p class="tour-blurb blurb-four">#}
+{#                            Day 4 - Day 8: <br/>#}
+{#                            Kuching - Mulu World Heritage Area <br/>#}
+{#                            Over the next 4 days in Mulu our time is divided between sight seeing, working on volunteer projects at  Mulu National Park and S.K. Batu Bungan,( the local boarding school and home to around 120 Orang Ulu students from the remote tributaries of the Baram River.)#}
+{#                        </p>#}
+{#                        <p class="tour-blurb blurb-four">#}
+{#                            Volunteer projects vary depending on weather, community needs and priorities and can be catered to the groups passion and experience.#}
+{#                            See partnerships and volunteer projects or contact us for further details on current projects.#}
+{#                        </p>#}
+{#                        <p class="tour-blurb blurb-four">#}
+{#                            Tours in and around Mulu World Heritage Area are coordinated with consideration to volunteer projects but include the following iconic experience; Clearwater Cave, Deer Cave, the Bat Exudus, night walk tour and visit to local Longhouse and art market.#}
+{#                            Please contact us if you would like to take part in an adventure caving experience/ extended day trip such as Pinnacles Climb, Clearwater Revival Adventure Caving or Garden of Eden Valley Walk#}
+{#                        </p>#}
+{##}
+{#                    </div>#}
+{##}
+{##}
+{##}
+{##}
+{#                    <div class="grid-item">#}
+{#                        <img src="/static/img/tour1/gal2.JPG"/>#}
+{#                    </div>#}
+{##}
+{#                    <div class="grid-item">#}
+{#                        <img src="/static/img/tour1/gal4.jpg"/>#}
+{#                    </div>#}
+{##}
+{#                    <div class="grid-item">#}
+{#                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />#}
+{#                    </div>#}
+{##}
+{#                    <div class="grid-item grid-item-width2">#}
+{#                        <img src="/static/img/tour1/gal3.JPG"/>#}
+{#                    </div>#}
+{##}
+{#                    <div class="grid-item">#}
+{#                        <img src="/static/img/tour1/gal6.jpg"/>#}
+{#                    </div>#}
+{#                    <div class="grid-item">#}
+{#                        <p class="tour-blurb blurb-five">#}
+{#                            Day 9 -Day 11:<br/>#}
+{#                            Trek the Headhunters Trail to Limbang<br/>#}
+{#                        </p>#}
+{#                        <p class="tour-blurb blurb-five">#}
+{#                            Averaging less than 200 visitors per year this section of pristine wilderness is home to hornbill your last few days takes you even further into the remote,parts of Borneo asTravel by longboat and remote trails along the historical Headhunters Trail of Borneo.#}
+{#                        </p>#}
+{#                        <p class="tour-blurb blurb-five">#}
+{#                            Walking out of the#}
+{#                        </p>#}
+{#                        <p class="tour-blurb blurb-five">#}
+{#                            Whether you are Relaxing in the longboats watching the forest skyline for your last sightings of hornbill, monkeys or scanning the riverbanks for sun baking water monitors and .... Your final,days trekking and travelling to Limbang is th perfect opportunity to reflect on your journey, your contribution to the people And lands of Sarawak and solidify the friendships of the like minded travellers drawn to Borneo ethical Adventures  and a travel experience that enriched mind, body and soul for travellers and those who's paths we cross.#}
+{#                            Experience longhouse hospitality at Medamit, indulge in a little tuak#}
+{#                            ,and provided an avenue for travellers with purpose to connect the elusive hornbills  longboat ride ,as we burst from under the rainforest canopy into longboats for the final#}
+{#                        </p>#}
+{#                    </div>#}
+{##}
+{#                    <div class="grid-item">#}
+{#                        <img src="/static/img/tour1/gal7.jpg"/>#}
+{#                    </div>#}
+{##}
+{##}
+{#                </div>#}
+{#            </div>#}
 
-                    <div class="grid-item">
-                        <img src="/static/img/tour1/gal1.jpg"/>
-                    </div>
 
 
-                    <div class="grid-item">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
-                    </div>
+            <h1>Masonry - fluid columnWidth</h1>
 
-                    <div class="grid-item">
-                        <img src="/static/img/tour1/gal8.jpeg"/>
-                    </div>
-                    <div class="grid-item">
-                        <p class="tour-blurb blurb-two">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+<div class="grid">
+    <div class="grid-sizer"></div>
+    <img class="grid-item" src="/static/img/tour1/gal1.jpg"/>
+    <div class="tour-blurb blurb-one grid-item">
+        <p>
+            Day 1: <br/>
+            Bako National Park <br/>
+            Nature logo <br/>                   {# what dis? #}
+            45 mins drive <br/>
+            20 mins boat ride <br/>
+        </p>
+        <p>
+            Depart the hotel at 8am.
+            Breakfast on infamous Sarawak laksa, popiah or rot I at a popular local cafe ( Choon Hui or Choon Chou )
+        </p>
 
-                    </div>
+        <p>Your journey to Bako National Park is made all the more pleasurable with a 20min boat ride through a stilted water village bustling with local fisherman.</p>
+        <p>As the inlet opens to the calm waters of the South China Sea we pass traditional fish traps, mangroves and islands.</p>
+        <p>Look out for the bottle nose dolphin, crocodiles, water monitors and coastal sea eagles.
+        <p>Bako National Park provides the perfect introduction to your wildlife encounter with regular sightings of Proboscis monkey, long tailed macaque, silverleaf monkeys and wild boar.</p>
+        <p>Explore a trail or two and enjoy a picnic lunch before returning to town.</p>
+    </div>
+    <img class="grid-item grid-item--width2 grid-item--height2" src="/static/img/tour1/gal8.jpeg"/>
+    <div class="tour-blurb blurb-two grid-item">
+        <p>
+            Day 2:<br/>
+            Behind the scenes at Matang rehabilitation sanctuary.
+        </p>
+        <p>
+            The dedicated staff and volunteers at Matang have saved and rehabitated thousands of endangered Bornean animals since their inception in....
+        </p>
+        <p>
+            You'll have the opportunity to get behind the scenes and learn what is required to keep the valuable volunteer project at Matang ticking along
+            Looking stylishly Euro there
+        </p>
+    </div>
+    <img class="grid-item grid-item--height3" src="/static/img/tour1/gal5.jpg"/>
+    <div class="tour-blurb blurb-three grid-item">
+        <p >
+            Day 3: <br/>
+            Depart 8am for a full day of Borneo at its best.
+            Kick start with the much anticipated visit to Semengoh Wildlife Sanctuary to witness orangutan in relatively nature setting. Back that up with a kayak journey along the...stopping at scenic locations for swimming, sightseeing and a traditional longhouse lunch.
+        </p>
+        <p >
+            On our last night in Kuching we learn we take a cooking class and share our meal with some Kuching locals doing great work for the people, animal and protected areas of Sarawak.
+        </p>
+    </div>
+    <img class="grid-item grid-item--height2" src="/static/img/tour1/gal9.jpg"/>
+    <div class="tour-blurb blurb-four grid-item">
+        <p >
+            Day 4 - Day 8: <br/>
+            Kuching - Mulu World Heritage Area <br/>
+            Over the next 4 days in Mulu our time is divided between sight seeing, working on volunteer projects at  Mulu National Park and S.K. Batu Bungan,( the local boarding school and home to around 120 Orang Ulu students from the remote tributaries of the Baram River.)
+        </p>
+        <p>
+            Volunteer projects vary depending on weather, community needs and priorities and can be catered to the groups passion and experience.
+            See partnerships and volunteer projects or contact us for further details on current projects.
+        </p>
+        <p>
+            Tours in and around Mulu World Heritage Area are coordinated with consideration to volunteer projects but include the following iconic experience; Clearwater Cave, Deer Cave, the Bat Exudus, night walk tour and visit to local Longhouse and art market.
+            Please contact us if you would like to take part in an adventure caving experience/ extended day trip such as Pinnacles Climb, Clearwater Revival Adventure Caving or Garden of Eden Valley Walk
+        </p>
+    </div>
+    <img class="grid-item " src="/static/img/tour1/gal2.JPG"/>
+    <div class="tour-blurb blurb-five grid-item">
+        <p >
+            Day 9 -Day 11:<br/>
+            Trek the Headhunters Trail to Limbang<br/>
+        </p>
+        <p>
+            Averaging less than 200 visitors per year this section of pristine wilderness is home to hornbill your last few days takes you even further into the remote,parts of Borneo asTravel by longboat and remote trails along the historical Headhunters Trail of Borneo.
+        </p>
+        <p >
+            Walking out of the
+        </p>
+        <p>
+            Whether you are Relaxing in the longboats watching the forest skyline for your last sightings of hornbill, monkeys or scanning the riverbanks for sun baking water monitors and ....
+        </p>
+        <p>
+            Your final,days trekking and travelling to Limbang is th perfect opportunity to reflect on your journey, your contribution to the people And lands of Sarawak and solidify the friendships of the like minded travellers drawn to Borneo ethical Adventures  and a travel experience that enriched mind, body and soul for travellers and those who's paths we cross.
+        </p>
+        <p>Experience longhouse hospitality at Medamit, indulge in a little tuak
+            ,and provided an avenue for travellers with purpose to connect the elusive hornbills  longboat ride ,as we burst from under the rainforest canopy into longboats for the final
+        </p>
+    </div>
+    <img class="grid-item" src="/static/img/tour1/gal4.jpg"/>
+    <img class="grid-item" src="/static/img/tour1/gal3.JPG"/>
+    <img class="grid-item" src="/static/img/tour1/gal6.jpg"/>
+    <img class="grid-item" src="/static/img/tour1/gal7.jpg"/>
 
-                    <div class="grid-item">
-                        <img src="/static/img/tour1/gal5.jpg"/>
-                    </div>
-
-                    <div class="grid-item">
-                        <img src="/static/img/tour1/gal9.jpg"/>
-                    </div>
-
-
-                    <div class="grid-item">
-                        <p class="tour-blurb blurb-one">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                    </div>
-
-
-
-                    <div class="grid-item">
-                        <img src="/static/img/tour1/gal2.JPG"/>
-                    </div>
-
-                    <div class="grid-item">
-                        <img src="/static/img/tour1/gal4.jpg"/>
-                    </div>
-                    <div class="grid-item">
-                        <p class="tour-blurb blurb-four">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-
-                    </div>
-                    <div class="grid-item">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
-                    </div>
-
-                    <div class="grid-item">
-                        <img src="/static/img/tour1/gal3.JPG"/>
-                    </div>
-
-                    <div class="grid-item">
-                        <img src="/static/img/tour1/gal6.jpg"/>
-                    </div>
-
-                    <div class="grid-item">
-                        <p class="tour-blurb blurb-three">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-
-                    </div>
-                    <div class="grid-item">
-                        <img src="/static/img/tour1/gal7.jpg"/>
-                    </div>
-                </div>
-            </div>
-
-
+</div>
 
 
 
         </div>
         <div class="slide" id="slide2">
 
-            <h1>Tour 2:</h1>
+            <h1 class="heading tour-heading-two">Tour 2:</h1>
             <div class="container">
                 <div class="grid">
                     <div class="grid-sizer"></div>
@@ -279,6 +491,10 @@
                     <div class="grid-item">
                         <img src="/static/img/tour2/gal7.jpeg"/>
                     </div>
+
+                    <div class="grid-item">
+                        <img src="/static/img/tour2/gal8.jpg"/>
+                    </div>
                 </div>
             </div>
 
@@ -288,7 +504,7 @@
         </div>
     </div>
     <div class="section" data-anchor="3rdPage" id="section2">
-        <h1>About us</h1>
+        <h1 class="heading">About us</h1>
 
     </div>
     <div class="section fp-auto-height" data-anchor="4thPage" id="section3">
@@ -378,6 +594,37 @@
     </div>
 </div>
 
+
+<script>
+        $(document).ready(function () {
+
+  WebFontConfig = {
+    google: {
+      families: ['Montserrat']
+    },
+    active: function() {
+      var $grid = $('.grid').imagesLoaded(function(){
+        $grid.masonry({
+            itemSelector: '.grid-item',
+                columnWidth: '.grid-sizer',
+                percentPosition: true,
+
+        });
+      });
+    }
+  };
+
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1.4.2/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+});
+</script>
 
 
 </body>
