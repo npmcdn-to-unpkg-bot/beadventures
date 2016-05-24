@@ -31,7 +31,7 @@
         .grid-sizer,
         .grid-item {
             width: 20%;
-{#            height:200px;#}
+        {#            height:200px;#}
         }
 
         .grid-item, .grid-item img {
@@ -48,15 +48,15 @@
             width:  80%;
         }
 
-{#        .grid-item--height2 {#}
-{#            height:  400px;#}
-{#        }#}
-{#        .grid-item--height3 {#}
-{#            height:  600px;#}
-{#        }#}
-{#        .grid-item--height4 {#}
-{#            height:  800px;#}
-{#        }#}
+        {#        .grid-item--height2 {#}
+        {#            height:  400px;#}
+        {#        }#}
+        {#        .grid-item--height3 {#}
+        {#            height:  600px;#}
+        {#        }#}
+        {#        .grid-item--height4 {#}
+        {#            height:  800px;#}
+        {#        }#}
 
     </style>
 </head>
@@ -316,7 +316,7 @@
     </div>
     <div class="section"  data-anchor="contactSection" id="contact">
         <div class="container">
-            <form class="well form-horizontal" action="MAILTO:contact@beadventures.com.au" method="post"  id="contact_form">
+            <form class="well form-horizontal" action="" method="post"  id="contact_form">
                 <fieldset>
 
                     <!-- Form Name -->
@@ -435,6 +435,19 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(wf, s);
         })();
+
+        $('#contact_form').submit(function(e){
+            e.preventDefault();
+            $.ajax({
+                url:'/static/php/email.php',
+                type:'post',
+                data:$('#contact_form').serialize(),
+                success:function(){
+                    //do nothing.
+                }
+            });
+        });
+
     });
 
     // external js: masonry.pkgd.js
