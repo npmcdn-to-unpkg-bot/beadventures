@@ -19,7 +19,7 @@
   //if "email" variable is not filled out, display the form
   else  {
 ?>
-
+echo '<script type="text/javascript">alert("shits fucked.");</script>';
 <?php
   }
 ?>
